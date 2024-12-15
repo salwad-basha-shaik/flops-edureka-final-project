@@ -101,16 +101,16 @@ for model_name, model in models.items():
         print(f"Finished logging to WhyLabs for {model_name}.")
 
 
-result = why.log(pandas=df_target)
-prof_view = result.view()
+# result = why.log(pandas=df_target)
+# prof_view = result.view()
 
-result_ref = why.log(pandas=df_reference)
-prof_view_ref = result_ref.view()
+# result_ref = why.log(pandas=df_reference)
+# prof_view_ref = result_ref.view()
 
-visualization = NotebookProfileVisualizer()
-visualization.set_profiles(target_profile_view=prof_view, reference_profile_view=prof_view_ref)
+# visualization = NotebookProfileVisualizer()
+# visualization.set_profiles(target_profile_view=prof_view, reference_profile_view=prof_view_ref)
 
-visualization.summary_drift_report()
+# visualization.summary_drift_report()
 
 # Best model summary
 print(f"Best model: {best_model_name} with R²: {best_r2}")
