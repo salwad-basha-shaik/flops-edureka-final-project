@@ -43,8 +43,13 @@ os.environ["WHYLABS_DEFAULT_DATASET_ID"] = "model-1" # The selected model projec
 results = why.log(data)
 results.writer("whylabs").write()
 
+#Using dagshub to track experiments via MLFlow.
+import dagshub
+dagshub.init(repo_owner='salwad-basha-shaik', repo_name='mlops-edureka-final-project', mlflow=True)
+
+
 # Initialize MLflow
-mlflow.set_tracking_uri(config['mlflow']['tracking_uri'])
+#mlflow.set_tracking_uri(config['mlflow']['tracking_uri'])
 mlflow.set_experiment(config['mlflow']['experiment_name'])
 
 # Dictionary of models to train
