@@ -1,0 +1,4 @@
+[core]
+    remote = origin
+['remote "origin"']
+    url = https://dagshub.com/salwad-basha-shaik/mlops-edureka-final-project.dvc
