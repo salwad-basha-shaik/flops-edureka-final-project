@@ -1,1 +1,1 @@
-# flops-edureka-final-project
+# mlops-edureka-final-project

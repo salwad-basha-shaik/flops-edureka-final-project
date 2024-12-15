@@ -1,0 +1,16 @@
+aliases: []
+creation_timestamp: 1734167413852
+current_stage: None
+description: ''
+last_updated_timestamp: 1734167413852
+name: BestSalaryPredictionModel
+run_id: f2173a66ee9f4f4b84b06ce3436830e4
+run_link: ''
+source: mlflow-artifacts:/520366350888139332/f2173a66ee9f4f4b84b06ce3436830e4/artifacts/Linear
+  Regression
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/520366350888139332/f2173a66ee9f4f4b84b06ce3436830e4/artifacts/Linear
+  Regression
+user_id: null
+version: 7

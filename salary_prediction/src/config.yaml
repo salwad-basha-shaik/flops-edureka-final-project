@@ -1,0 +1,30 @@
+data:
+  path: "/Users/salwad/mlops-edureka-final-project/salary_prediction/data/project_salary_dataset_v1.csv"
+
+split:
+  test_size: 0.2
+  random_state: 42
+
+models:
+  linear_regression: {}
+  random_forest:
+    n_estimators: 100
+    max_depth: null
+    min_samples_split: 2
+    random_state: 8888
+  decision_tree:
+    criterion: poisson
+    max_depth: 10
+    random_state: 8888
+
+mlflow:
+  experiment_name: "Salary_Prediction"
+  tracking_uri: "http://127.0.0.1:5000/"
+
+whylabs:
+  api_key: "HbanJPABAZ.tprrMQrt8zVlku94WWqBfSvej2lH64Mgan7mEkB5cCdmE4f4EUeWS:org-qg9qk2"
+  org_id: "org-qg9qk2"
+
+flask:
+  host: "0.0.0.0"
+  port: 5001
